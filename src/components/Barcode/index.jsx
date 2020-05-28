@@ -1,4 +1,4 @@
-import Taro, { useMemo } from '@tarojs/taro'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { Image } from '@tarojs/components'
 import barcode from '../../utils/barcode'

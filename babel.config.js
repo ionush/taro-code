@@ -1,30 +1,12 @@
-/* eslint-disable import/no-commonjs */
-const apis = require('@tarojs/taro-h5/dist/taroApis')
-
+// babel-preset-taro 更多选项和默认值：
+// https://github.com/NervJS/taro/blob/next/packages/babel-preset-taro/README.md
 module.exports = {
   presets: [
     [
-      '@babel/env',
+      'taro',
       {
-        spec: true,
-        useBuiltIns: false,
-      },
-    ],
-  ],
-  plugins: [
-    '@babel/plugin-proposal-class-properties',
-    [
-      '@babel/plugin-transform-react-jsx',
-      {
-        pragma: 'Nerv.createElement',
-      },
-    ],
-    ['@babel/plugin-proposal-object-rest-spread'],
-    [
-      'babel-plugin-transform-taroapi',
-      {
-        apis,
-        packageName: '@tarojs/taro-h5',
+        framework: 'react',
+        ts: false,
       },
     ],
   ],
